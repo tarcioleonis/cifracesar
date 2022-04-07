@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens escondidas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../Projeto 01/script.js" defer></script>
+</head>
+<body>
+    <div class="box">
+        <form class="forms" name = "formulario"> 
+
+            <fieldset>
+            <legend>Codificador de mensagens</legend>
+            
+            <div class="textodeentrada">
+                <input type="text" class="msgentrada" name = texto id="texto" placeholder="Digite aqui sua mensagem a ser traduzida">
+            </div>
+
+            <div class="metodo">
+                <label for="option">Código</label>
+                <select name="escolhacod" class="escolhacod" id="escolhacod" required>
+                    <option value="vazio" id="vazio">---</option>
+                    <option value="cesar" id="cesar">Cífra de césar</option>
+                    <option value="base64" id="base64">Base64</option>
+                </select>
+            </div>
+
+            <div class="incremento" style="display: none" id="valorIncremento">
+                <p>Incremento da chave</p>
+                <input type="number" class="inputIncremento" id="numeroIncrementos" default="0" min="1" value="1" />
+            </div>
+
+            <div class="codif">
+                <input type="radio" name = "codif" id="codificar" value="codificar" /> <label for="codificar">Codificar</label>
+                <input type="radio" name = "codif" id="decodificar" value="decodificar" /> <label for="decodificar">Decodificar</label>
+            </div>
+            
+            <div class="botao">
+                <button type="submit" class="btn" name="mensagem" id="submit">Codificar mensagem</button>
+            </div>
+
+            <div class="resultado">
+                <textarea disabled class="areaSaida" id="saidaTexto" placeholder="O resultado será mostrado aqui"></textarea>
+            </div>
+
+        </fieldset>
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech Mono", monospace;
+    ;
+  }
+
+  html, body, .box {
+    width: 100%;
+    height:  100%;
+  }
+
+  body {
+    background-image: url(./imagens/background.gif) ;
+    background-size: cover;
+    /*deixar imagem de fundo opaca*/
+    backdrop-filter: blur(5px);
+   /*APAGAR DEPOIS*/
+  }
+  
+
+  .forms {
+    background-color: rgba(0,0,0,0.2);
+    width: 400px;
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: -3px -3px 9px rgba(0, 46, 83, 0.5), 5px 5px 5px rgba(0, 18, 34, 0.7);
+    
+  }
+
+  fieldset,legend {
+  border-radius: 10px;
+  border: 3px solid rgb(204, 0, 255);
+  
+}
+
+legend {
+  padding: 0.6rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.botao, .box {
+  justify-content: center;
+
+}
+
+.box, .metodo, .codif, .botao, .incremento {
+  display: flex;
+  align-items: center;
+}
+
+.metodo, .codif, .incremento {
+  justify-content: space-evenly;
+  
+}
+
+.botao,
+.box {
+  justify-content: center;
+}
+
+.inputIncremento, option {
+    text-align: center;
+    
+}
+
+.inputIncremento {
+    width: 15%;
+    margin-left: 6%;
+    height: 25px;
+    margin-right: 6%;
+    color: black;
+}
+
+.textodeentrada,
+.modo,
+.codif,
+.resultado,
+.incremento {
+  margin: 8% 5%;
+  font-size: 1rem;
+}
+
+.codif {
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+.msgentrada, .areaSaida {
+  width: 100%;
+  height: 40px;
+}
+
+.areaSaida {
+    height: 100px;
+    resize: none;
+  }
+
+  legend,
+  .forms,
+  .areaSaida,
+  .inputTexto,
+  .chooseCod
+   {
+    color: white;
+    
+  }
+
+  .escolhacod,
+  .radioBtn,
+  .btn {
+    cursor: pointer;
+    font-style: solid;
+  }
+
+  .btn {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background: rgba(143, 13, 110, 0.2);
+    color: white;
+  }
+
+  
